@@ -1,0 +1,23 @@
+name: rubocop_plugin
+version: 0.0.1
+language: 
+description: A Ruby static code analyzer, based on the community Ruby style guide.
+tags:
+ - ruby
+ - rubocop
+ - format
+ - analyzer
+ - plugin
+
+public: true
+
+# clone_in_docker: false
+
+
+outputs:
+  - FLOW_RUBOCOP_LOG_PATH
+  - FLOW_RUBOCOP_SUMMARY_OFFENSE_COUNT
+  - FLOW_RUBOCOP_SUMMARY_TARGET_FILE_COUNT
+  - FLOW_RUBOCOP_SUMMARY_INSPECTED_FILE_COUNT
+
+script_path: ./run.sh
